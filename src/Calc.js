@@ -4,11 +4,14 @@ import Display from "./Display";
 import NumberPanel from "./NumberPanel";
 
 const Calc = () => {
+  const [currentCalcText, setCurrentCalcText] = useState([]);
+  const [calcResult, setCalcResult] = useState(0);
+
   return (
     <div>
-      <Display />
-      <NumberPanel />
-      <ActionsPanel />
+      <Display text={currentCalcText} result={calcResult} />
+      <NumberPanel onClick={number => {}} />
+      <ActionsPanel onClick={operator => {}} />
     </div>
   );
 };
