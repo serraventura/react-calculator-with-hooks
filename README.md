@@ -1,3 +1,19 @@
+## Calculator
+
+**Version number: 627d7be039e0085025a51d47e42bdd970409ec1c**
+
+ - This repository is using the latest React version and its new hooks features.
+
+ - Test coverage is using Enzyme with Jest.
+
+ - Styled-component for styles
+
+ The goal was to use the same UX as the Android Calculator what makes the code slighly more complex than an usual calculator.
+
+ There are bugs still to be fixed to make the chosen UX work properly.
+
+------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
