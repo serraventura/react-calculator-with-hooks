@@ -11,7 +11,14 @@ describe("<Display />", () => {
     expect(wrapper).toBeTruthy();
   });
 
-  it("should display right expression with right result", () => {});
+  it("should display right expression with right result", () => {
+    const wrapper = shallow(<Display text={[1, "+", 1]} result="2" />);
+    expect(wrapper.find(`[data-test="expression"]`).text()).toEqual("1 + 1");
+    expect(wrapper.find(`[data-test="result"]`).text()).toEqual("2");
+  });
 
-  it("should match snapshot", () => {});
+  it("should match snapshot", () => {
+    const wrapper = shallow(<Display text={[]} />);
+    expect(wrapper).toMatchSnapshot();
+  });
 });
