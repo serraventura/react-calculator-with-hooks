@@ -1,4 +1,4 @@
-## Calculator
+## Calculator - Tests with React hooks
 
  - This repository is using the latest React version and its new hooks features.
 
